@@ -1,0 +1,282 @@
+*{
+    padding:0;
+    margin: 0;
+}
+
+body{
+    background: #f9f7f8;
+    padding: 45px 0 64px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/*顶部导航栏*/
+header{
+    position: fixed;
+    top:0;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.navbar{
+    display: flex;
+    background: #fff;
+    height: 40px;
+    color: black;
+}
+
+.navbar .navbar-left{
+    height: 40px;
+    line-height: 40px;
+}
+
+.navbar .nav-city{
+    font-size: 14px;
+    margin: 0 15px;
+}
+
+.icon-downarrow{
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-left:2px solid #000;
+    border-bottom: 2px solid #000; 
+    transform: rotate(-45deg);
+    margin:0 0 4px 6px;
+}
+
+.nav-search{
+    background: #f3f3f3;
+    height:30px;
+    line-height: 30px;
+    flex: 1;
+    border-radius:15px;
+    padding: 0 20px;
+    margin: 5px 15px 0 0; 
+    font-size: 14px;
+}
+
+.nav-search input{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline:none;
+}
+
+/*广告图*/
+.banner{
+    padding: 5px 10px;
+    background: #fff;
+    
+}
+
+.banner img{
+    width: 100%;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+/*导航菜单*/
+.navlist{
+    background: #fff;
+    padding-top: 10px;
+    margin-bottom: 10px;
+}
+
+.navlist ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.navlist .nav-item{
+    flex: 0 0 20%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.nav-item .nav-icon{
+    display: block;
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    /* background: #fd9d21; */
+    margin:0 auto 7px;  
+    color:white;  
+    font-size: 25px;
+    line-height: 40px;
+}
+
+.nav-item .nav-des{
+    color: #333;
+}
+
+/*拼团*/
+.boxWrapper{
+    background: white;
+    padding: 10px;    
+}
+
+.boxwrapper h4{
+    color: #333;
+}
+
+.box-list{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.box-list .box-item{
+    display: inline-block;
+    width: 49%;
+    text-align: center;
+}
+
+.box-item img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+.box-item .item-title{
+    font-size: 14px;
+    padding: 0 15px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.box-item .price .strong{
+    font-size: 18px;
+    color: #f63;
+}
+
+.box-item .price .line-price{
+    font-size: 12px;
+    text-decoration-line: line-through;
+    color: #666;
+}
+
+/*猜你喜欢*/
+.guessLike{
+    background: white;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.guessLike .title{
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd8ce;
+    color: #666;
+}
+
+.guessLike .guessItem{
+    border-bottom: 1px solid #ddd8ce;
+}
+
+.guessLike .guessItem:last-child{
+    border: none;
+}
+.guessItem .itemhref{
+    padding: 15px 0;
+    display: block;
+}
+
+.guessItem .item-box{
+    display: flex;
+    padding: 10px;
+}
+.guessItem .item-img{
+    display: inline-block;
+    width: 90px;
+    height:90px;
+}
+
+.item-img img{
+    width: 100%;
+    height:100%;
+}
+
+.guessItem .item-des{
+    flex: 1;
+    margin-left: 10px;
+}
+
+.guessItem .item-name{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+.guessItem .item-title{
+    font-size: 15px;
+    color:#666;
+    margin-bottom: 6px;
+}
+
+.guessItem .price{
+    font-size: 14px;
+    color: #666;
+    position: relative;
+}
+
+.price .strong{
+    font-size: 22px;
+    color: #ff0000;
+}
+
+.guessItem .price .strong::before{
+    content:'\A5';
+    font-size: 14px;
+    color: #ff0000;
+    margin-right: 3px;
+}
+
+.guessItem .price .selNum{
+    position: absolute;
+    right:0;
+    top: 8px;
+}
+
+/*底部导航栏*/
+footer{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    background: white;
+}
+
+footer .nav-menu{
+    display: flex;
+}
+
+
+.nav-item{
+    flex:1;
+    text-align: center;
+    margin: 8px 0;
+}
+
+.nav-item a{
+    display: block;
+    color:#333;
+}
+
+.nav-item a:active{
+    color: #f63;
+}
+
+.nav-item .iconfont2{
+    display: block;
+    font-size: 24px;
+}
+
+.nav-item span{
+    font-size: 14px;
+}
